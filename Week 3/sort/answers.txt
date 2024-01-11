@@ -1,0 +1,11 @@
+sort1 uses: Bubble Sort
+
+How do you know?: The time required to sort the numbers increases drastically with increasing size when using the random and reversed files while the time required is very less when given the sorted file.
+
+sort2 uses: Merge Sort
+
+How do you know?: The time required to sort the larger files does not increase on a scale comparable to how it does for the other two algorithms.
+
+sort3 uses: Selection Sort
+
+How do you know?: The time required to sort the larger files is much more than that for the smaller ones and it does not return the sorted files quickly.
