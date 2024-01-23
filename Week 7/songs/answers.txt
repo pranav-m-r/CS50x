@@ -1,0 +1,3 @@
+The data shows high average energy, danceability and valence, with an average duration of 205 seconds, showing that the listener likes upbeat and optimistic music including romantic music. So, I would characterize their audio aura as pink.
+The average values of these properties of the music may not convey the right meaning as a listener who listens to two extremes of a certain kind of music would get characterized as a listener who has an averaged mood of these.
+I would propose a slightly more complex algorithm, where we could allot points to each song for each mood it represents. Picking the most prominent mood from the weighted average of these points with higher priority for songs higher up in the list could give us a more accurate audio aura.
