@@ -1,0 +1,2 @@
+link, script, a, img, video, audio, p, header, main, footer, input, button, h1, h5, h6
+color, background-color, padding, text-align, transition, border, font-size
