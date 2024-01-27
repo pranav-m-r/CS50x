@@ -1,0 +1,40 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Transaction Review
+{% endblock %}
+
+{% block main %}
+{{ row.price | usd }}
+{{ (row.price * row.shares) | usd }}
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Symbol</th>
+                <th>Price</th>
+                <th>Shares</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td> {{ row.symbol }} </td>
+                <td> {{ row.price | usd }} </td>
+                <td> {{ row.shares }} </td>
+                <td> {{ (row.price * row.shares) | usd }} </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <th> Cash </th>
+                <td> {{ (row.price * row.shares) | usd }} </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <th> Total </th>
+                <td> {{ (row.price * row.shares) | usd }} </td>
+            </tr>
+        </tbody>
+    </table>
+{% endblock %}

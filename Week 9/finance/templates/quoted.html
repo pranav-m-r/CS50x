@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    View Quote
+{% endblock %}
+
+{% block main %}
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Stock</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td> {{ quote.symbol }} </td>
+                <td> {{ quote.price | usd }} </td>
+            </tr>
+        </tbody>
+    </table>
+    <form action="/quote" method="get">
+        <button class="btn btn-primary" type="submit">Get New Quote</button>
+    </form>
+{% endblock %}
